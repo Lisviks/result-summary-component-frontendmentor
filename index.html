@@ -10,11 +10,12 @@
   <title>Frontend Mentor | Results summary component</title>
 </head>
 <body>
+  <div class="container">
   <header>
     <h1>Your Result</h1>
       <div class="result">
-        <p>76</p>
-        <p>of 100</p>
+        <p class="total-score">76</p>
+        <p class="max-score">of 100</p>
       </div>
       <div class="message">
         <h2>Great</h2>
@@ -26,47 +27,48 @@
     <h3>Summary</h3>
     <ul>
       <li class="reaction">
-        <div>
+        <div class="category">
           <img src="./assets/images/icon-reaction.svg" alt="reaction icon">
           <span>Reaction</span>
         </div>
-        <div>
-          <span class="score">80</span>
-          / 100 
+        <div class="score">
+          <span>80</span>
+          <span class="max-score">/ 100</span>
         </div>
       </li>
       <li class="memory">
-        <div>
+        <div class="category">
           <img src="./assets/images/icon-memory.svg" alt="reaction icon">
           <span>Memory</span>
         </div>
-        <div>
-          <span class="score">92</span>
-          / 100 
+        <div class="score">
+          <span>92</span>
+          <span class="max-score">/ 100</span>
         </div>
       </li>
       <li class="verbal">
-        <div>
+        <div class="category">
           <img src="./assets/images/icon-verbal.svg" alt="reaction icon">
           <span>Verbal</span>
         </div>
-        <div>
-          <span class="score">61</span>
-          / 100 
+        <div class="score">
+          <span>61</span>
+          <span class="max-score">/ 100</span>
         </div>
       </li>
       <li class="visual">
-        <div>
+        <div class="category">
           <img src="./assets/images/icon-visual.svg" alt="reaction icon">
           <span>Visual</span>
         </div>
-        <div>
-          <span class="score">73</span>
-          / 100 
+        <div class="score">
+          <span>73</span>
+          <span class="max-score">/ 100</span>
         </div>
       </li>
     </ul>
     <button>Continue</button>
   </main>
+  </div>
 </body>
 </html>
