@@ -108,6 +108,7 @@ main {
       padding: 1.6rem;
       font-size: 1.6rem;
       font-weight: 700;
+      line-height: 2.1rem;
 
       &:last-child {
         margin-bottom: 0;
@@ -164,5 +165,83 @@ main {
     border: none;
     border-radius: 12.8rem;
     margin: 2.4rem 0;
+  }
+}
+
+@media(min-width: 750px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ecf2ff;
+  }
+
+  .container {
+    flex-direction: row;
+    width: 736px;
+    background: #fff;
+    border-radius: 3.2rem;
+  } 
+
+  header {
+    border-radius: 3.2rem;
+    padding: 3.8rem 5.4rem;
+    box-shadow: none; 
+
+    h1 {
+      font-size: 2.4rem;
+      line-height: 3.1rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .result {
+      height: 20rem;
+      width: 20rem;
+      padding: 5rem 0;
+
+      .total-score {
+        font-size: 8rem;
+      }
+
+      .max-score {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+      }
+    }
+
+    .message {
+      margin: 2.8rem auto 0;
+
+      h2 {
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+        margin-bottom: 1.4rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+      }
+    }
+  }
+
+  main {
+    padding: 0 4rem;
+
+    h3 {
+      font-size: 2.4rem;
+      line-height: 3.1rem;
+      margin-bottom: 2.8rem;
+    }
+
+    li {
+      font-size: 1.8rem;
+      line-height: 2.3rem;
+    }
+
+    button {
+      margin: 4.1rem 0;
+    }
   }
 }
