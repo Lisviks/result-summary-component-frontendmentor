@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/result_widget.dart';
+import 'package:flutter_app/header_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Results Summary Component',
-      home: MyHomePage(),
+      theme: ThemeData(fontFamily: 'HankenGrotesk'),
+      home: const MyHomePage(),
     );
   }
 }
@@ -24,16 +25,8 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        children: [
-          Column(
-            children: const [
-              Text('Your Result'),
-              Result(),
-              Text('Great'),
-              Text(
-                  'You scored higher than 65% of the people who have taken these test.'),
-            ],
-          ),
+        children: const [
+          Header(),
         ],
       ),
     );
