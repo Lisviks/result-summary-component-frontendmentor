@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/header_widget.dart';
+import 'package:flutter_app/summary_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +28,7 @@ class MyHomePage extends StatelessWidget {
       body: ListView(
         children: const [
           Header(),
+          Summary(),
         ],
       ),
     );
