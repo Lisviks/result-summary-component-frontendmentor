@@ -15,9 +15,11 @@ class Header extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
+          stops: [0.0, 0.1, 1.0],
           colors: [
-            Color(0Xff7755ff),
-            Color(0Xff2f2ce9),
+            Color(0xff7755ff),
+            Color(0xff6943ff),
+            Color(0xff2f2ce9),
           ],
         ),
       ),
