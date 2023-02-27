@@ -15,9 +15,11 @@ class Result extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
+            stops: [0.0, 1.0, 1.0],
             colors: [
-              Color(0Xff2f2ce9),
-              Color(0Xff7755ff),
+              Color(0xff4d21c9),
+              Color.fromRGBO(37, 33, 201, 0),
+              Color.fromRGBO(37, 33, 201, 0),
             ],
           ),
         ),
